@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B0233C261F1137C70038788C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0233C251F1137C70038788C /* AppDelegate.swift */; };
-		B0233C281F1137C70038788C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0233C271F1137C70038788C /* ViewController.swift */; };
 		B0233C2B1F1137C70038788C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0233C291F1137C70038788C /* Main.storyboard */; };
 		B0233C2D1F1137C70038788C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0233C2C1F1137C70038788C /* Assets.xcassets */; };
 		B0233C301F1137C70038788C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0233C2E1F1137C70038788C /* LaunchScreen.storyboard */; };
+		B0233C381F1137D70038788C /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0233C371F1137D70038788C /* Todo.swift */; };
+		B0233C3A1F1138790038788C /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0233C391F1138790038788C /* TodoListViewController.swift */; };
+		B0233C3C1F11399E0038788C /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0233C3B1F11399E0038788C /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B0233C221F1137C70038788C /* Todos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0233C251F1137C70038788C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B0233C271F1137C70038788C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0233C2A1F1137C70038788C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0233C2C1F1137C70038788C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0233C2F1F1137C70038788C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0233C311F1137C70038788C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0233C371F1137D70038788C /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		B0233C391F1138790038788C /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodoListViewController.swift; path = ../TodoListViewController.swift; sourceTree = "<group>"; };
+		B0233C3B1F11399E0038788C /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		B0233C241F1137C70038788C /* Todos */ = {
 			isa = PBXGroup;
 			children = (
+				B0233C391F1138790038788C /* TodoListViewController.swift */,
 				B0233C251F1137C70038788C /* AppDelegate.swift */,
-				B0233C271F1137C70038788C /* ViewController.swift */,
 				B0233C291F1137C70038788C /* Main.storyboard */,
 				B0233C2C1F1137C70038788C /* Assets.xcassets */,
 				B0233C2E1F1137C70038788C /* LaunchScreen.storyboard */,
 				B0233C311F1137C70038788C /* Info.plist */,
+				B0233C371F1137D70038788C /* Todo.swift */,
+				B0233C3B1F11399E0038788C /* NetworkController.swift */,
 			);
 			path = Todos;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0233C281F1137C70038788C /* ViewController.swift in Sources */,
+				B0233C3C1F11399E0038788C /* NetworkController.swift in Sources */,
+				B0233C3A1F1138790038788C /* TodoListViewController.swift in Sources */,
+				B0233C381F1137D70038788C /* Todo.swift in Sources */,
 				B0233C261F1137C70038788C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +312,7 @@
 				B0233C361F1137C70038788C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
